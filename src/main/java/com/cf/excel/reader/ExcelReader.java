@@ -74,7 +74,6 @@ public class ExcelReader<T> {
 		if (null == endColumn) {
 			throw new NullPointerException("Please set endColumn！");
 		}
-		// 循环工作表Sheet
 		for (int numSheet = 0; numSheet < hssfWorkbook.getNumberOfSheets(); numSheet++) {
 			Sheet sheet = hssfWorkbook.getSheetAt(numSheet);
 			if (sheet == null) {
